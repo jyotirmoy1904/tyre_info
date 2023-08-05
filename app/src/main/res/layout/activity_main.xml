@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <view
+        android:id="@+id/view"
+        class="com.google.android.material.card.MaterialCardView"
+        android:layout_width="0dp"
+        android:layout_height="252dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mac"
+        android:layout_width="227dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="65dp"
+        android:text="macAddress"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="125dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/mac"
+        app:srcCompat="@drawable/car_wheel_vector_34385"
+        tools:srcCompat="@drawable/car_wheel_vector_34385" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="209dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="28dp"
+        android:text="Tyre Data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pressure"
+        android:layout_width="149dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="116dp"
+        android:text="Pressure"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+    <view
+        android:id="@+id/view2"
+        class="com.google.android.material.card.MaterialCardView"
+        android:layout_width="0dp"
+        android:layout_height="252dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.812" />
+
+    <TextView
+        android:id="@+id/mac2"
+        android:layout_width="227dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="65dp"
+        android:text="macAddress"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="110dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintEnd_toStartOf="@+id/pressure2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mac2"
+        app:srcCompat="@drawable/car_wheel_vector_34385"
+        tools:srcCompat="@drawable/car_wheel_vector_34385" />
+
+
+    <TextView
+        android:id="@+id/pressure2"
+        android:layout_width="151dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="65dp"
+        android:text="Pressure"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/mac2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/temperature2"
+        android:layout_width="74dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="80dp"
+        android:text="temperature2"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.73" />
+
+    <TextView
+        android:id="@+id/battery"
+        android:layout_width="68dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="247dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="56dp"
+        android:text="battery"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/pressure"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="68dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="56dp"
+        android:text="temperature"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/pressure"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/battery2"
+        android:layout_width="68dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="263dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="56dp"
+        android:text="battery2"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
